@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import { MantineLogo } from "@mantine/ds";
+import cameraLogo from "../../assets/cameraLogo.svg"
 import { Container, Group, Burger, Drawer, Stack } from "@mantine/core";
 import useLinks from "./useLinks";
 import { DrawerContext } from "../../Contexts/drawerContext";
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <MantineLogo size={28} />
+      <img src={cameraLogo} alt="Camera Logo" width="180" height="40" />
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
