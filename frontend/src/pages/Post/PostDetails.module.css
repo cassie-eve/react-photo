@@ -1,0 +1,29 @@
+.card {
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: var(--mantine-shadow-sm);
+  border-radius: var(--mantine-radius-md);
+}
+
+.card img {
+  height: 540px;
+  object-fit: cover;
+}
+
+.section {
+  padding: 16px; /* Ensure consistent padding within sections */
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.like {
+  color: var(--mantine-color-red-6);
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: var(--mantine-font-size-xs);
+  font-weight: 700;
+}

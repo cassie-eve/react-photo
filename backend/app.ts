@@ -49,9 +49,14 @@ app.get("/api/posts", async (req, res) => {
 
 // ⭐️ TODO: Implement this yourself
 app.get("/api/posts/:id", (req, res) => {
-  const id = req.params.id;
-  // The line below should be fixed.
-  res.json(posts[0]);
+  const id = parseInt(req.params.id, 10);
+  const post = posts.find(p => p.id === id);
+  if (post) {
+    
+    const user = findUserById(post.userId);
+    const username = user.email.split('@')[0];
+    res.json({...post, username});
+  }
 });
 
 /**
