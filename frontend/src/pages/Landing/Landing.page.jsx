@@ -24,13 +24,6 @@ const Landing = () => {
       <p>
         Join Photo Club today and be a part of a vibrant community where every click captures a moment, every share tells a story, and every photo inspires.
       </p>
-
-      {/* TODO: Replace placeholder images */}
-      <Group position="center" spacing="md" style={{ marginTop: '20px' }} grow>
-        <Image src="https://via.placeholder.com/300x200?text=App+Screenshot+1" alt="App Screenshot 1" style={{ borderRadius: '8px' }} />
-        <Image src="https://via.placeholder.com/300x200?text=App+Screenshot+2" alt="App Screenshot 2" style={{ borderRadius: '8px' }} />
-        <Image src="https://via.placeholder.com/300x200?text=App+Screenshot+3" alt="App Screenshot 3" style={{ borderRadius: '8px' }} />
-      </Group>
     </Container>
   );
 };
